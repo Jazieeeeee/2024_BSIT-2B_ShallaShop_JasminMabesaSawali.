@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bf-color: #262b40;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-decoration: none;
+  
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    margin-left: 2.5%;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    margin-right: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.activate {
+    color: rgb(92, 92, 241);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: var(--bg-color);
+}
+
+.aboutme-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.aboutme-content h2{
+    text-align: left;
+    line-height: 1;
+    margin-top: 10%;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.aboutme-content h3 {
+    font-size: 2.6rem;
+
+}
+
+.aboutme-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+</style>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="aboutme.html" class="activate">About  Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="aboutme" id="aboutme">
+        <div class="aboutme-img">
+            <img src="images/aboutmepic.jpg" alt="">
+        </div>
+
+        <div class="aboutme-content">
+            <h2 class="heading"> ABOUT <span>ME</span>  </h2>   
+            <h3> IT STUDENT</h3>
+            <p>Hello there! I'm Jasmin M. Sawali, currently studying IT at Bicol University-Polangui. I have a strong interest in technology, but my passion for cooking is what truly sets me apart. I find joy in experimenting with flavors and techniques in the kitchen, and I believe it complements my analytical skills in IT. I'm excited to combine my love for both fields and see where this unique blend takes me in my journey.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+
+    </section>
+</body>
+</html>
